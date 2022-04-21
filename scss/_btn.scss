@@ -1,0 +1,19 @@
+.btn {
+    max-width: 217px;
+    width: 100%;
+    height: 56px;
+    padding: 16px 31px;
+    background-color: #0E8784;
+    color: #FEFCF7;
+    border-radius: 6px;
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    transition: 250ms all ease;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #66D2CF;
+}
