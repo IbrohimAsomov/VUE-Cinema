@@ -1,0 +1,37 @@
+.adv {
+    background: linear-gradient(90.09deg, #3800AF -0.35%, #C27500 99.65%);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--white);
+
+    &:hover {
+        color: aqua;
+    }
+
+    
+    .adv &__icon:hover {
+        transform: rotate3d(1, 1, 0, 360deg);
+    }
+    
+    &__icon {
+        font-size: 45px;
+        transition: all 250ms;
+        transition: 1250ms;
+
+        &:hover {
+            transform: rotate3d(1, 1, 0, 360deg);
+        }
+    }
+    
+    &__text {
+        max-width: 166px;
+        margin: 0;
+        margin-left: 24px;
+        text-align: start;
+        display: inline-block;
+        font-family: 'Comfortaa';
+        font-weight: 400px;
+        line-height: 18px;
+    }
+}

@@ -6,10 +6,9 @@ html {
     box-sizing: border-box;
 }
 
-body {
-    width: 100%;    
-    padding: 0;
-    margin: 0;
+.main-body {
+    width: 100%;
+    background-color: #000000;
     font-family: 'Montserrat', 'Arila', sans-serif ;
 }
 
@@ -27,4 +26,8 @@ img {
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-}   
+}
+
+a {
+    text-decoration: none;
+}
