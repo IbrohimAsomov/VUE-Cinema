@@ -474,17 +474,15 @@ a {
   color: aqua;
 }
 
-.adv .adv__icon:hover {
+.adv:hover .adv__icon {
   -webkit-transform: rotate3d(1, 1, 0, 360deg);
           transform: rotate3d(1, 1, 0, 360deg);
 }
 
 .adv__icon {
-  -webkit-transition: all 250ms;
-  transition: all 250ms;
   font-size: 45px;
-  -webkit-transition: 1250ms;
-  transition: 1250ms;
+  -webkit-transition: all 1250ms;
+  transition: all 1250ms;
 }
 
 .adv__text {

@@ -10,14 +10,13 @@
     }
     
     
-    .adv &__icon:hover {
+    .adv:hover &__icon {
         transform: rotate3d(1, 1, 0, 360deg);
     }
     
     &__icon {
-        transition: all 250ms;
         font-size: 45px;
-        transition: 1250ms;
+        transition: all 1250ms;
     }
     
     &__text {
