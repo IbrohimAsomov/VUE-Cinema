@@ -362,7 +362,7 @@ template {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/montserrat-v23-latin-regular.woff2") format("woff2") url("../fonts/montserrat-v23-latin-regular.woff") format("woff");
+  src: url("../fonts/montserrat-v24-latin-regular.woff2") format("woff2"), url("../fonts/montserrat-v24-latin-regular.woff") format("woff");
 }
 
 @font-face {
@@ -370,7 +370,7 @@ template {
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("../fonts/montserrat-v23-latin-700.woff2") format("woff2") url("../fonts/montserrat-v23-latin-700.woff") format("woff");
+  src: url("../fonts/montserrat-v24-latin-700.woff2") format("woff2"), url("../fonts/montserrat-v24-latin-700.woff") format("woff");
 }
 
 @font-face {
@@ -400,7 +400,6 @@ html {
 
 .main-body {
   width: 100%;
-  background-color: #000000;
   font-family: 'Montserrat', 'Arila', sans-serif;
 }
 
@@ -460,6 +459,85 @@ a {
 .btn:hover {
   background-color: var(--dark-blue);
   color: var(--white);
+}
+
+.nav {
+  background-color: rgba(1, 3, 5, 0.8);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  top: 0;
+  z-index: 9999;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.nav__info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.nav__logo-img {
+  font-family: 'Comfortaa';
+  color: var(--white);
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.nav__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item + .nav__item {
+  margin-left: 30px;
+}
+
+.nav__link {
+  color: var(--white);
+  padding: 42px 0px;
+  font-family: 'Montserrat';
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 17px;
+  position: relative;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+.nav__link:hover {
+  color: var(--orange);
+}
+
+.nav__link::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: var(--orange);
+  border-radius: 4px 4px 0px 0px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+.nav__link:hover::after {
+  width: 100%;
 }
 
 .adv {
