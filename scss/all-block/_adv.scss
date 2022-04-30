@@ -8,20 +8,16 @@
     &:hover {
         color: aqua;
     }
-
+    
     
     .adv &__icon:hover {
         transform: rotate3d(1, 1, 0, 360deg);
     }
     
     &__icon {
-        font-size: 45px;
         transition: all 250ms;
+        font-size: 45px;
         transition: 1250ms;
-
-        &:hover {
-            transform: rotate3d(1, 1, 0, 360deg);
-        }
     }
     
     &__text {
@@ -33,5 +29,6 @@
         font-family: 'Comfortaa';
         font-weight: 400px;
         line-height: 18px;
+
     }
 }

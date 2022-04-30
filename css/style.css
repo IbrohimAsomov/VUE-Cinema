@@ -480,16 +480,11 @@ a {
 }
 
 .adv__icon {
-  font-size: 45px;
   -webkit-transition: all 250ms;
   transition: all 250ms;
+  font-size: 45px;
   -webkit-transition: 1250ms;
   transition: 1250ms;
-}
-
-.adv__icon:hover {
-  -webkit-transform: rotate3d(1, 1, 0, 360deg);
-          transform: rotate3d(1, 1, 0, 360deg);
 }
 
 .adv__text {
